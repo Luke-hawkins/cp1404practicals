@@ -2,7 +2,7 @@
 CP1404/CP5632 - Practical
 Broken program to determine score status
 """
-
+import random
 
 def main():
     """Generates a score bases on results"""
@@ -12,6 +12,10 @@ def main():
         score = float(input("Enter score: "))
     result = get_result(score)
     print(result)
+    score = random.randint(0,100)
+    result = get_result(score)
+    print(f"Random result is {result}")
+
 
 def get_result(score):
     """Return results based on score"""
