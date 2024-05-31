@@ -1,6 +1,6 @@
 def main():
     password = get_password()
-    print(len(password) * "*")
+    print_hidden_password(password)
 
 def get_password():
     password_minimun_length = 10
@@ -8,6 +8,10 @@ def get_password():
     while len(password) < password_minimun_length:
         password = input("invalid password\n Password: ")
     return password
+
+def print_hidden_password(password):
+    print(len(password) * "*")
+
 
 main()
 
