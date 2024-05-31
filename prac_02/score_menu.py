@@ -1,6 +1,6 @@
 def main():
     """Allow user to input score and output results based on the score"""
-    MENU = "(G)et a valid score (must be 0-100 inclusive) \n(P)rint result \n(S)how stars ) \n(Q)uit"
+    MENU = "(G)et a valid score (must be 0-100 inclusive) \n(P)rint result \n(S)how stars \n(Q)uit"
     score = get_valid_score()
     print(MENU)
     choice = input(">>> ").upper()
@@ -10,6 +10,14 @@ def main():
         elif choice == "P":
             result = get_result(score)
             print(result)
+        elif choice == "S":
+            print_stars(score)
+        else:
+            print("Invalid option")
+        print(MENU)
+        choice = input(">>> ").upper()
+    print("Some kind of fair well :/")
+
 def get_valid_score():
     """get a valid score from 0 to 100"""
     score = float(input("Enter score: "))
@@ -26,6 +34,10 @@ def get_result(score):
         return "Passable"
     else:
         return "Bad :("
+
+def print_stars(score):
+    """prints """
+    print("*" * int(score))
 
 
 main()
