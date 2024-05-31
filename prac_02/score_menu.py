@@ -36,7 +36,7 @@ def get_result(score):
         return "Bad :("
 
 def print_stars(score):
-    """prints """
+    """prints a star for every mark out of 100"""
     print("*" * int(score))
 
 
