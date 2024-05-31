@@ -16,7 +16,6 @@ def main():
     result = get_result(score)
     print(f"Random result is {result}")
 
-
 def get_result(score):
     """Return results based on score"""
     if score >= 90:

@@ -17,4 +17,3 @@ def print_hidden_password(password):
 
 
 main()
-

@@ -26,12 +26,10 @@ Q - Quit"""
         choice = input(">>> ").upper()
     print("Thank you.")
 
-
 def convert_fahrenheit_to_celsius(fahrenheit):
     """Return converted temperature from Fahrenheit to Celsius"""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
-
 
 def convert_celsius_to_fahrenheit(celsius):
     """Return converted temperature from Celsius to Fahrenheit"""
