@@ -16,7 +16,11 @@ def question_two():
     in_file.close()
 
 def question_three():
-    in_file = open("files.txt", 'r')
+    with open("numbers.txt", 'r') as in_file:
+        first_number = int(in_file.readline())
+        second_number = int(in_file.readline())
+    print(first_number + second_number)
+
 
 
 main()
