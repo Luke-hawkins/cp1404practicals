@@ -39,4 +39,5 @@ while MIN_PRICE <= price <= MAX_PRICE:
     day_count += 1
     print(f"On day {day_count} price is: ${price:,.2f}")
     print(f"${price:,.2f}", file=out_file)
-out_file.close()
+
+out_file.close() # close FILENAME
