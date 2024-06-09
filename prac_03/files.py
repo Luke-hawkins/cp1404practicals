@@ -1,7 +1,8 @@
 def main():
-    question_one()
-    question_two()
+    # question_one()
+    # question_two()
     question_three()
+    question_four()
 
 def question_one():
     name = input("Name: ")
@@ -21,6 +22,12 @@ def question_three():
         second_number = int(in_file.readline())
     print(first_number + second_number)
 
+def question_four():
+    sum_of_numbers = 0
+    with open("numbers.txt", 'r') as in_file:
+        for line in in_file:
+            sum_of_numbers += int(line)
+    print(sum_of_numbers)
 
 
 main()
