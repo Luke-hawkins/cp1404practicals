@@ -9,7 +9,7 @@ code and the total number of each characters was irrelevant. just needed to know
 
 MIN_LENGTH = 2
 MAX_LENGTH = 6
-IS_SPECIAL_CHARACTER_REQUIRED = True
+IS_SPECIAL_CHARACTER_REQUIRED = False
 SPECIAL_CHARACTERS = "!@#$%^&*()_-=+`~,./'[]<>?{}|\\"
 
 
@@ -38,7 +38,7 @@ def is_valid_password(password):
     upper_character = False
     digit_character = False
     special_character = False
-    
+
     for character in password:
         if character.islower():
             lower_character = True
