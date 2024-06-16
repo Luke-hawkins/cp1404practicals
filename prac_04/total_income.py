@@ -17,6 +17,7 @@ def main():
 
 
 def display_income_summary(incomes):
+    """display income total over months"""
     print("\nIncome Report\n-------------")
     total = 0
     month_count = 0
