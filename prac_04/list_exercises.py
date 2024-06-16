@@ -6,6 +6,8 @@ def main():
                  'bob']
     numbers = get_numbers(TOTAL_INPUT_NUMBERS)
     display_numbers_summary(numbers)
+    username = str(input("Username: "))
+    check_username(usernames, username)
 
 def get_numbers(TOTAL_INPUT_NUMBERS):
     """Gets numbers from uses depending on TOTAL_INPUT_NUMBERS"""
@@ -20,5 +22,13 @@ def display_numbers_summary(numbers):
     print(f"The first number is {numbers[0]} \nThe last number is {numbers[-1]} \n"
           f"The smallest number is {sorted_numbers[0]} \nThe largest number is {sorted_numbers[-1]}\n"
           f"The average of the numbers is {sum(numbers) / len(numbers)}")
+
+def check_username(usernames, username):
+    """check if username is in usernames list"""
+    if username in usernames:
+        print("Access granted")
+    else:
+        print("access denied")
+
 
 main()
