@@ -1,15 +1,15 @@
+TOTAL_INPUT_NUMBERS = 5
 def main():
     """Gets list of numbers from user"""
-    TOTAL_INPUT_NUMBERS = 5
     usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
                  'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
                  'bob']
-    numbers = get_numbers(TOTAL_INPUT_NUMBERS)
+    numbers = get_numbers()
     display_numbers_summary(numbers)
     username = str(input("Username: "))
     check_username(usernames, username)
 
-def get_numbers(TOTAL_INPUT_NUMBERS):
+def get_numbers():
     """Gets numbers from uses depending on TOTAL_INPUT_NUMBERS"""
     numbers = []
     while len(numbers) != TOTAL_INPUT_NUMBERS:
