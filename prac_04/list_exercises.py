@@ -1,6 +1,9 @@
 def main():
     """Gets list of numbers from user"""
     TOTAL_INPUT_NUMBERS = 5
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
     numbers = get_numbers(TOTAL_INPUT_NUMBERS)
     display_numbers_summary(numbers)
 
